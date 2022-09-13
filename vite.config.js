@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
-  path: "name",
+  path: "https://github.com/Ali-Mahmoud-Abdalluh/bestpost-offical-webpage/",
   plugins: [
     react(),
     viteCompression({
