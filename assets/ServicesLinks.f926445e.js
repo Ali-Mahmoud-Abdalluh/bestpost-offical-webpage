@@ -1,0 +1,1 @@
+import{a as t}from"./index.50cecac8.js";const a=({link:e,name:s,condition:r})=>t("a",{href:e,className:`text-[16px] leading-[20px] text-white hover:bg-sky-500 px-2 p-1 sm:max-w-[250px] sm:min-w-[200px] rounded-[4px] ${r?"":"self-center"}`,children:s});export{a as default};
