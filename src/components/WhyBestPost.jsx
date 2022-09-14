@@ -22,7 +22,7 @@ const Portfolio = () => {
             </div>
             <div className="w-full py-4 ">
                 <motion.div ref={carousel} className="carousel rounded-[10px]">
-                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel gap-4 ">
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel ">
                         {
                             whybestpost.map((reason) => (
                                 <motion.div key={reason.number} className="ss:min-w-[50%] 
