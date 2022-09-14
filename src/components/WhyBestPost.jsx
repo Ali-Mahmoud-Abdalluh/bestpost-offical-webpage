@@ -29,7 +29,7 @@ const Portfolio = () => {
                                 md:min-w-[32%]
                                 min-w-[99%] bg-white  p-[20px] rounded-[10px] my-4  ">
                                     <WhyBestPostCard number={reason.number} content={reason.content} icon={reason.icon} />
-                                    <div className="h-[full] w-[10px]" />
+                                    <div className="h-[full] min-w-[10px] max-w-[10px]" />
                                 </motion.div>
                             ))
                         }
