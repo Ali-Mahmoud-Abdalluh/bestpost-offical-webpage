@@ -22,14 +22,13 @@ const Portfolio = () => {
             </div>
             <div className="w-full py-4 ">
                 <motion.div ref={carousel} className="carousel rounded-[10px]">
-                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel ">
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel gap-4">
                         {
                             whybestpost.map((reason) => (
                                 <motion.div key={reason.number} className="ss:min-w-[50%] 
                                 md:min-w-[32%]
                                 min-w-[99%] bg-white  p-[20px] rounded-[10px] my-4  ">
                                     <WhyBestPostCard number={reason.number} content={reason.content} icon={reason.icon} />
-                                    <div className="h-[full] min-w-[10px] max-w-[10px]" />
                                 </motion.div>
                             ))
                         }
