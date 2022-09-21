@@ -1,3 +1,4 @@
+import { joinPaths } from "@remix-run/router";
 import {
     vi, publications, gd, marketing, media, laserengraving, qulity, honesty, facebook,
     instagram,
@@ -6,31 +7,67 @@ import {
     tiktok,
     youtube,
     googleblus,
+    blog1,
+    blog2,
+    blog3,
+    blog4,
+    blog5,
+    blog6,
+    blog7,
+    blog8,
+    blog9,
+    blog10,
+    blog11,
+    blog12,
+    blog13,
+    blog14,
+    blog15,
+    blog16,
+    blog17,
+    blog18,
+    blog19,
+    blog20,
+    blog21,
+    blog22,
+    author,
+    h_card_image1,
+    h_card_image2,
+    h_card_image4,
+    h_card_image3,
 } from "../assets";
 export const navLinks = [
     {
         id: "home",
         title: "Home",
+        to: '/bestpost-offical-webpage',
     },
     {
         id: "services",
         title: "Services",
+        to: '/bestpost-offical-webpage/services',
+
     },
     {
-        id: "product",
-        title: "Product",
+        id: "products",
+        title: "Products",
+        to: '/bestpost-offical-webpage/product'
     },
     {
-        id: "tutorial",
-        title: "Tutorial",
+        id: "tutorials",
+        title: "Tutorials",
+        to: '/bestpost-offical-webpage/tutorials',
     },
     {
         id: "blog",
         title: "Blog",
+        to: '/bestpost-offical-webpage/blog',
+
     },
     {
         id: "aboutus",
         title: "About",
+        to: '/bestpost-offical-webpage/about',
+
     },
 ];
 
@@ -252,4 +289,386 @@ export const socialMediaLinks = [
         icon: googleblus,
         link: "#",
     }
+]
+
+
+export const filterMenu = [
+    {
+        Categories: [
+            "All articles",
+            "Visual identity",
+            "Establishing and structuring projects",
+            "Manufacture and installation of signs and facades",
+            "Marketing",
+            "Preparing and implementing exhibition and conference supplies",
+            "Occasion gifts",
+            "Media",
+            "Management and marketing consultancy",
+            "Laser engraving",
+            "Graphic",
+            "Youtube",
+        ]
+    },
+    {
+        Keywords: [
+            "Establishing and structuring projects",
+            "Manufacture and installation of signs and facades",
+            "interface designs",
+            "Tips",
+            "Youtube",
+            "Occasion Gifts",
+            "3D",
+            "ideas",
+            "laser engraving",
+            "Graphic",
+        ]
+    }
+
+]
+
+export const last_blogs = [
+    {
+        id: 1,
+        category: 'Media',
+        shortDescription: "This text is example for text",
+        smallImage: blog1,
+    },
+    {
+        id: 2,
+        category: "Aircraft construction and structuring",
+        shortDescription: "This text is an example of a text that can be replaced in the same space.",
+        smallImage: blog2,
+    },
+    {
+        id: 3,
+        category: "Youtube",
+        shortDescription: 'This text is an example of text that can be replaced in the same space.',
+        smallImage: blog3,
+    },
+    {
+        id: 4,
+        category: 'Publications',
+        shortDescription: "This text is an example of text that can be replaced in the same space This text is an example of text that can be replaced in the same space.",
+        smallImage: blog4,
+    },
+    {
+        id: 5,
+        category: 'Graphic',
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: blog5,
+    },
+    {
+        id: 6,
+        category: "Laser engraving",
+        shortDescription: "This text is an example of text that can be replaced in the same space This text is an example of text that can be replaced in the same space.",
+        smallImage: blog6,
+    },
+    {
+        id: 7,
+        category: "Marketing",
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: blog7,
+    }
+]
+
+
+export const important_categories = [
+    'Visual identity',
+    'Publications',
+    'Graphic',
+    'Marketing',
+    'Media',
+    'Laser engraving',
+    'Manufacture and installation of signs and facades',
+    'Management and marketing consultancy',
+    'Establishing and structuring projects',
+    'Preparing and implementing exhibition and conference supplies',
+    'Youtube',
+]
+
+
+export const latest_marketing_blogs = [
+    {
+        "latest marketing blogs": [
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.'
+        ]
+    }
+]
+
+export const latest_designs_blogs = [
+    {
+        "latest designs blogs": [
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.'
+        ]
+    }
+]
+export const latest_laser_engraving_blogs = [
+    {
+        "latest laser engraving blogs": [
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space.',
+            'This text is an example of text that can be replaced here in the same space.'
+        ]
+    }
+]
+
+
+export const blogs_card_data = [
+    {
+        id: 1,
+        image: blog8,
+        watched: '170k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 2,
+        likes: 323,
+        image: blog9,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        watched: '153k',
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 3,
+        image: blog10,
+        likes: 3223,
+        watched: '150k',
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 4,
+        image: blog11,
+        watched: '180k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 5,
+        image: blog12,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    }
+]
+
+export const h_card_data = [
+    {
+        id: 1,
+        category: 'Graphic',
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: h_card_image1,
+    },
+    {
+        id: 2,
+        category: "Establishing and structuring projects",
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: h_card_image4,
+    },
+]
+
+
+export const blogs_card_data2 = [
+    {
+        id: 1,
+        image: blog13,
+        watched: '170k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 2,
+        likes: 323,
+        image: blog14,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        watched: '153k',
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 3,
+        image: blog15,
+        likes: 3223,
+        watched: '150k',
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 4,
+        image: blog16,
+        watched: '180k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 5,
+        image: blog17,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    }
+]
+
+
+export const h_card_data2 = [
+    {
+        id: 1,
+        category: 'Publications',
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: h_card_image3,
+    },
+    {
+        id: 2,
+        category: "Manufacture and installation of signs and facades",
+        shortDescription: "This text is an example of text that can be replaced in the same space.",
+        smallImage: h_card_image2,
+    },
+]
+
+export const blogs_card_data3 = [
+    {
+        id: 1,
+        image: blog18,
+        watched: '170k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 2,
+        likes: 323,
+        image: blog19,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        watched: '153k',
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 3,
+        image: blog20,
+        likes: 3223,
+        watched: '150k',
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 4,
+        image: blog21,
+        watched: '180k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 5,
+        image: blog22,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 6,
+        image: blog20,
+        likes: 3223,
+        watched: '150k',
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 7,
+        image: blog21,
+        watched: '180k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 8,
+        image: blog22,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
+    {
+        id: 9,
+        image: blog18,
+        watched: '170k',
+        likes: 3223,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    },
 ]

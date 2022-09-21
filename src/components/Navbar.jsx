@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import styles from '../style'
 import { close, logo, menu, demoV } from '../assets'
 import { navLinks } from '../constants'
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -21,9 +21,9 @@ const Navbar = () => {
             key={nav.id}
             className={`font-cairo font-medium cursor-pointer text-[30px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} hover:font-semibold`}
           >
-            <a href={`#${nav.id}`}>
+            <Link to={nav.to}>
               {nav.title}
-            </a>
+            </Link>
           </motion.li>
         ))}
       </ul>

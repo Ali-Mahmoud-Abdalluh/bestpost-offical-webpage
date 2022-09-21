@@ -5,6 +5,13 @@ module.exports = {
   ],
   mode: "jit",
   theme: {
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
+    },
     extend: {
       colors: {
         primary: "#FFFFFF",
@@ -27,6 +34,6 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar-hide')
-    ]
+  ]
   ,
 }
