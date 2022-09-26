@@ -5,7 +5,7 @@ import './index.css'
 import { BrowserRouter, HashRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/bestpost-offical-webpage'>
+  <BrowserRouter >
     <HashRouter>
       <App />
     </HashRouter>
