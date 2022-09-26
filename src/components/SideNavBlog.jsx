@@ -5,9 +5,7 @@ import { latest_marketing_blogs } from '../constants'
 
 const SideNavBlog = () => {
     return (
-        <div className='w-[370px] ml-2'>
-
-
+        <div className='w-[370px] ml-2 lg:block hidden'>
             {/* impotant categories */}
             <div className='flex flex-col justify-start'>
                 <div className='w-full border-[#CCCCCC] border-b-[3px] relative'><h2 className='font-normal text-[30px] leading-[56px] border-b-[5px] border-[#FCC320] inline-block relative top-1'>Important categories</h2></div>

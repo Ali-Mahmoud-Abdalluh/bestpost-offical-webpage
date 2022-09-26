@@ -20,14 +20,14 @@ const Search = () => {
                     <img src={search} alt="search icon" className="min-w-[16px] min-h-[16px] max-w-[16px] max-h-[16px] sm:max-w-[32px] sm:max-h-[32px]" />
                 </div>
             </div>
-            <div className={`w-[770px] mt-[12px] p-[24px] bg-[#FFFFFF] rounded-[6px] drop-shadow-xl ${!toggle && 'hidden'}`}>
+            <div className={`w-[100vw] sm:w-[770px] sm:mt-[12px] p-[24px] bg-[#FFFFFF] rounded-[6px]drop-shadow-xl ${!toggle && 'hidden'} `}>
                 {
                     filterMenu.map((menu) =>
-                        <div key={Object.keys(menu)[0]} className="">
-                            <h2 className="font-[24px] leading-[44.98px] font-bold">{Object.keys(menu)[0]}</h2>
-                            <div className="min-w-full bg-[#061F37] min-h-[1px] max-h-[1px] rounded-full mb-2" />
-                            <ul className="grid grid-rows-4 grid-flow-col gap-1">
-                                {Object.values(menu)[0].map((item) => <li key={item} className="font-normal font-[18px] text-start flex items-center  hover:bg-[#FCC320] pl-2">{item}</li>)}
+                        <div key={Object.keys(menu)[0]} className="flex flex-col ss:whitespace-nowrap sm:flex sm:flex-col sm:whitespace-normal  pb-4  w-[100%] ">
+                            <h2 className="font-[24px] leading-[24px] sm:leading-[44.98px] font-bold  h-[fit-content] mb-1">{Object.keys(menu)[0]}</h2>
+                            <div className="min-w-full bg-[#061F37] min-h-[1px] max-h-[1px] rounded-full mb-2 hidden sm:block col-span-0" />
+                            <ul className="sm:grid sm:grid-cols-3 gap-2 sm:mt-4 ">
+                                {Object.values(menu)[0].map((item) => <li key={item} className="font-normal font-[18px] text-start hover:text-[#FCC320] px-2 overflow-hidden border-b-[1px] sm:border-b-[0]">{item}</li>)}
                             </ul>
                         </div>
                     )

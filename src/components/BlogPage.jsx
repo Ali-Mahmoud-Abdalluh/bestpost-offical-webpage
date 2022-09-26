@@ -1,8 +1,8 @@
 import styles from "../style"
 import loadable from '@loadable/component'
-import SideNavBlog from "./SideNavBlog"
 import { blogCoverImage } from "../assets"
 
+const SideNavBlog = loadable(() => import('./SideNavBlog'))
 const Navbar = loadable(() => import('./Navbar'))
 const Footer = loadable(() => import('./Footer'))
 const Search = loadable(() => import('./Search'))
@@ -11,7 +11,7 @@ const BlogList = loadable(() => import('./BlogList'))
 
 const BlogPage = () => {
     return (
-        <div className="bg-primary w-full overflow-hidden relative scrollbar-hide justify-center flex flex-col" >
+        <div className="bg-primary w-full overflow-hidden relative scrollbar-hide justify-center flex-col flex" >
             {/* Nav bar  */}
             <div className={`border-b-2 top-0 z-[40] ${styles.paddingX} ${styles.flexCenter} sticky top-0  relative z-[1000] h-[80px] `}>
                 <div className={`${styles.boxWidth} relative `}>
@@ -43,7 +43,7 @@ const BlogPage = () => {
 
             {/* blog List and sidebar*/}
             <div className={`relative ${styles.flexStart} px:0 md:px-10 bg-[#ffffff]`}>
-                <div className={`${styles.boxWidth} relative z-[0] flex flex-row justify-between`}>
+                <div className={`${styles.boxWidth} relative z-[0] grid grid-cols-2 lg:grid-cols-3 gap-10`}>
                     <BlogList />
                     <SideNavBlog />
                 </div>

@@ -1,33 +1,54 @@
-import React from 'react'
 import { last_blogs } from '../constants'
 import LastBlogCard from './LastBlogCard'
 import styles from '../style'
-import { motion } from "framer-motion"
-import { useState, useRef, useEffect } from 'react'
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y, FreeMode } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/free-mode';
+
 
 const BlogScrollSection = () => {
-    const [cWidth, setCWidth] = useState(0)
-    const carousel2 = useRef(null);
-    useEffect(() => {
-        setCWidth(carousel2.current.scrollWidth - carousel2.current.offsetWidth)
-    }, [])
 
     return (
         <section className={`${styles.flexCenter} flex-col relative `}>
             <div className="w-full py-4 ">
-                <motion.div ref={carousel2} className="carousel rounded-[10px]">
-                    <motion.div drag="x" dragConstraints={{ right: 0, left: -cWidth }} className="inner-carousel gap-4 flex flex-row items-center rounded-[10px]">
-                        {
-                            last_blogs.map((blog) => (
-                                <motion.div key={blog.id} className={`ss:min-w-[50%] 
-                                md:min-w-[32%]
-                                min-w-[99%] bg-white rounded-[10px] my-4 max-h-[513px]`}>
-                                    <LastBlogCard blog={blog} />
-                                </motion.div>
-                            ))
+                <Swiper
+                    className="pb-[50px] px-[50px]"
+                    modules={[Navigation, Scrollbar, A11y, Pagination, FreeMode]}
+                    spaceBetween={50}
+                    freeMode='true'
+                    scrollbar={{ draggable: true }}
+                    breakpoints={{
+                        480: {
+                            slidesPerView: 1,
+                        },
+                        600: {
+                            slidesPerView: 2,
+                            spaceBetween: 15,
+                        },
+                        1200: {
+                            slidesPerView: 3,
                         }
-                    </motion.div>
-                </motion.div>
+                    }}
+                    navigation
+                    pagination={{ clickable: true }}
+                >
+                    {
+                        last_blogs.map(
+                            (blog, index) =>
+                                <SwiperSlide key={index}>
+                                    <LastBlogCard blog={blog} />
+                                </SwiperSlide>
+                        )
+                    }
+                </Swiper>
             </div>
         </section >
     )

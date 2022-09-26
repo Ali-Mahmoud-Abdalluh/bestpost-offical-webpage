@@ -39,34 +39,34 @@ export const navLinks = [
     {
         id: "home",
         title: "Home",
-        to: '/bestpost-offical-webpage',
+        to: '/',
     },
     {
         id: "services",
         title: "Services",
-        to: '/bestpost-offical-webpage/services',
+        to: '/services',
 
     },
     {
         id: "products",
         title: "Products",
-        to: '/bestpost-offical-webpage/product'
+        to: '/product'
     },
     {
         id: "tutorials",
         title: "Tutorials",
-        to: '/bestpost-offical-webpage/tutorials',
+        to: '/tutorials',
     },
     {
         id: "blog",
         title: "Blog",
-        to: '/bestpost-offical-webpage/blog',
+        to: '/blog',
 
     },
     {
         id: "aboutus",
         title: "About",
-        to: '/bestpost-offical-webpage/about',
+        to: '/about',
 
     },
 ];
@@ -479,6 +479,18 @@ export const blogs_card_data = [
         time: "6 minutes ago",
         description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
     }
+    ,
+    {
+        id: 6,
+        image: blog12,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    }
 ]
 
 export const h_card_data = [
@@ -544,6 +556,18 @@ export const blogs_card_data2 = [
     },
     {
         id: 5,
+        image: blog17,
+        title: "This text is an example of a text that can be replaced here in the same space",
+        author: 'by Mohamed Hamada',
+        likes: 3223,
+        watched: '250k',
+        author_image: author,
+        time: "6 minutes ago",
+        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
+    }
+    ,
+    {
+        id: 6,
         image: blog17,
         title: "This text is an example of a text that can be replaced here in the same space",
         author: 'by Mohamed Hamada',
@@ -637,38 +661,5 @@ export const blogs_card_data3 = [
         author_image: author,
         time: "6 minutes ago",
         description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
-    },
-    {
-        id: 7,
-        image: blog21,
-        watched: '180k',
-        likes: 3223,
-        title: "This text is an example of a text that can be replaced here in the same space",
-        author: 'by Mohamed Hamada',
-        author_image: author,
-        time: "6 minutes ago",
-        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
-    },
-    {
-        id: 8,
-        image: blog22,
-        title: "This text is an example of a text that can be replaced here in the same space",
-        author: 'by Mohamed Hamada',
-        likes: 3223,
-        watched: '250k',
-        author_image: author,
-        time: "6 minutes ago",
-        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
-    },
-    {
-        id: 9,
-        image: blog18,
-        watched: '170k',
-        likes: 3223,
-        title: "This text is an example of a text that can be replaced here in the same space",
-        author: 'by Mohamed Hamada',
-        author_image: author,
-        time: "6 minutes ago",
-        description: 'This text is an example of text that can be replaced here in the same space This text is an example of text that can be replaced here in the same space',
-    },
+    }
 ]
