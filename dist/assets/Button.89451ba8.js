@@ -1,0 +1,1 @@
+import{a as p}from"./index.c1d36ff7.js";const e=({value:t})=>p("button",{type:"Button",className:"px-[20px] py-[10px] sm:py-[20px] sm:px-[40px] bg-blue-gradient-btn text-white rounded-[4px] text-[24px]  sm:text-[30px]",children:t});export{e as default};
