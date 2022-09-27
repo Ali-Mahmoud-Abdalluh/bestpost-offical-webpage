@@ -24,7 +24,7 @@ const Portfolio = () => {
             </div>
             <div className="w-full">
                 <Swiper
-                    className="pb-[50px] px-[50px]"
+                    className="pb-[50px] px-[50px] grid grid-rows-1 h-[fit-content]"
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     breakpoints={{
